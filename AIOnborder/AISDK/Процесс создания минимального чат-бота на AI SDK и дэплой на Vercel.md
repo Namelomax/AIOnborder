@@ -7,7 +7,7 @@
 ```sh
     npx create-next-app@latest ProjectName
     cd my-ai-chat
-    ```
+```
     
 - Установить зависимости:
     
@@ -17,7 +17,7 @@
     npm install ai @openrouter/ai-sdk-provider :: Зависит от провайдера, для каждого своя зависимость
 	npx ai-elements@latest :: Готовые элементы
 	npm install ai :: Для useChat
-    ```
+```
 
 ## 2. Бэкенд (API route)
 
@@ -28,6 +28,7 @@ OPENROUTER_API_KEY=sk-or-v1-xxx
 Важно указать export const runtime = 'nodejs'; чтобы Vercel подтянул ключ и .env
 Если все в порядке Vercel сам задеплоит проект и даст ссылку, однако для api ключа нужно отдельно добавить его в .env
 - На [dashboard.vercel.com](https://vercel.com/dashboard) → Project Settings → Environment Variables добавить:
+
 ```
 key = OPENROUTER_API_KEY
 value = sk-or-v1-xxxx
@@ -123,7 +124,8 @@ export default function ChatPage() {
       </form>
     </div>
   );
-}```
+}
+```
 
 ## 4. Запуск локально
 После этого можно запускать локально и тестировать
